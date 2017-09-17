@@ -1,5 +1,4 @@
-python files selected
- contour detection
- contour trackbar
+ 1.contour detection
+ 2.contour trackbar
  combine the two programs to have contour lines along with the track bar
- canny edge detection
+ 3.canny edge detection
