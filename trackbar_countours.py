@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Jun 07 17:48:34 2015
 
-@author: Johnny
 
 An enhanced version of the original simple tutorial contour demo - added
 trackbar to vary threshold - so we get to see contour lines at various
