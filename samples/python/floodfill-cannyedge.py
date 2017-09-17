@@ -11,11 +11,13 @@ Usage:
 Keys:
   f     - toggle floating range
   c     - toggle 4/8 connectivity
-  ESC   - exit
+  ESC   - to show the added functionality of canny edge detection, press ESC. 
 '''
 
 # Python 2/3 compatibility
 from __future__ import print_function
+#new line nidhi
+from matplotlib import pyplot as plt
 
 import numpy as np
 import cv2
@@ -77,4 +79,18 @@ if __name__ == '__main__':
             connectivity = 12-connectivity
             print('connectivity =', connectivity)
             update()
+
+
     cv2.destroyAllWindows()
+
+    #new lines nidhi
+    edges = cv2.Canny(img, 100, 200)
+
+    plt.subplot(121), plt.imshow(img, cmap='gray')
+    plt.title('Original Image'), plt.xticks([]), plt.yticks([])
+    plt.subplot(122), plt.imshow(edges, cmap='gray')
+    plt.title('Edge Image'), plt.xticks([]), plt.yticks([])
+
+    plt.show()
+
+    
