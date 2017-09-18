@@ -7,14 +7,16 @@ Loads several images sequentially and tries to find squares in each image.
 '''
 
 # Python 2/3 compatibility
+
 import sys
+import numpy as np
+import cv2
+
 PY3 = sys.version_info[0] == 3
 
 if PY3:
     xrange = range
 
-import numpy as np
-import cv2
 
 
 def angle_cos(p0, p1, p2):
